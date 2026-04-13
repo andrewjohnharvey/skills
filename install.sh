@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Install every skill I use on a fresh machine.
-# Just runs `npx skills add` for each skill in sequence and lets
-# the `skills` CLI handle where things go and which agent to target.
+# Runs `npx skills add` for each skill in sequence, interactively,
+# so you can pick agents and options in the TUI each time.
 set -euo pipefail
 
-# My own skills
-npx skills@latest add andrewjohnharvey/skills --all
+# My own skills — pick which ones in the TUI
+npx skills@latest add andrewjohnharvey/skills
 
 # Matt Pocock — https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills/write-a-prd

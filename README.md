@@ -4,16 +4,16 @@ This is my personal collection of skills for AI agents — a few I've written my
 
 ## Install
 
-Grab everything in one go — my skills and the external ones:
+Walk through every skill, one by one, in the `skills` TUI (pick your agents and options for each):
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/andrewjohnharvey/skills/main/install.sh | bash
+bash <(curl -fsSL https://raw.githubusercontent.com/andrewjohnharvey/skills/main/install.sh)
 ```
 
-Just want my skills? No problem:
+Just want mine? No problem:
 
 ```sh
-npx skills add andrewjohnharvey/skills --all
+npx skills add andrewjohnharvey/skills
 ```
 
 Or pick a single one:
@@ -24,14 +24,11 @@ npx skills add andrewjohnharvey/skills --skill paul-graham-writing
 
 Once it's done, run `npx skills list` to see what landed.
 
-## My skills
+## Skills
 
-- **paul-graham-writing** — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
+Mine plus the ones I borrow — Matt's are from [mattpocock/skills](https://github.com/mattpocock/skills), licensed MIT.
 
-## From [Matt Pocock](https://github.com/mattpocock/skills)
-
-Matt has built a brilliant set of skills for planning and shipping software. These are the ones I reach for most:
-
+- **paul-graham-writing** (mine) — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
 - **write-a-prd** — Walks you through writing a PRD by interviewing you and poking around the codebase, then files it as a GitHub issue.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices.
 - **prd-to-issues** — Breaks a PRD into GitHub issues anyone on the team can pick up.
