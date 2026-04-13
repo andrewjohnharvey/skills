@@ -1,72 +1,44 @@
 # Skills
 
-A collection of custom skills for AI agents. Install them with [`npx skills`](https://skills.sh).
-
-## Available skills
-
-| Skill | Description |
-|-------|-------------|
-| **paul-graham-writing** | Apply Paul Graham's writing principles to produce or revise content that is clear, simple, and deeply readable. Triggers on any writing, rewriting, or editing task. |
+This is my personal collection of skills for AI agents — a few I've written myself, plus a hand-picked set I borrow from other people whose work I love. One command sets up the whole lot on any machine, so your agent session is ready to go in seconds.
 
 ## Install
 
-Install a specific skill:
+Grab everything in one go — my skills and the external ones:
 
 ```sh
-npx skills add andrewjohnharvey/skills --skill paul-graham-writing
+curl -fsSL https://raw.githubusercontent.com/andrewjohnharvey/skills/main/install.sh | bash
 ```
 
-Install all skills from this repo:
+Just want my skills? No problem:
 
 ```sh
 npx skills add andrewjohnharvey/skills --all
 ```
 
-Verify it worked:
+Or pick a single one:
 
 ```sh
-npx skills list
+npx skills add andrewjohnharvey/skills --skill paul-graham-writing
 ```
 
-The skill will appear automatically in your next agent session.
+Once it's done, run `npx skills list` to see what landed.
 
-## Adding a new skill
+## My skills
 
-1. Create a folder under `skills/` with your skill name:
+- **paul-graham-writing** — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
 
-```
-skills/
-└── skills/
-    ├── paul-graham-writing/
-    │   └── SKILL.md
-    └── your-new-skill/
-        └── SKILL.md
-```
+## From [Matt Pocock](https://github.com/mattpocock/skills)
 
-2. Write a `SKILL.md` with YAML frontmatter and markdown body:
+Matt has built a brilliant set of skills for planning and shipping software. These are the ones I reach for most:
 
-```markdown
----
-name: your-new-skill
-description: >
-  One or two sentences describing what the skill does and when it should trigger.
----
-
-# Your New Skill
-
-Your skill instructions go here.
-```
-
-3. Commit and push:
-
-```sh
-git add skills/your-new-skill/
-git commit -m "Add your-new-skill"
-git push
-```
-
-The skill is installable immediately after pushing.
-
-## License
-
-MIT
+- **write-a-prd** — Walks you through writing a PRD by interviewing you and poking around the codebase, then files it as a GitHub issue.
+- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices.
+- **prd-to-issues** — Breaks a PRD into GitHub issues anyone on the team can pick up.
+- **grill-me** — Interviews you relentlessly about a plan until every branch of the decision tree is resolved. Great when you need your thinking stress-tested.
+- **design-an-interface** — Generates several radically different interface designs in parallel so you can compare.
+- **request-refactor-plan** — Helps you plan a refactor as a series of tiny commits, then files it as a GitHub issue.
+- **tdd** — Red-green-refactor, done properly.
+- **triage-issue** — Hunts down a bug's root cause and files an issue with a TDD-based fix plan.
+- **improve-codebase-architecture** — Looks for architectural changes that would make a codebase more testable.
+- **ubiquitous-language** — Pulls a DDD-style glossary out of the current conversation so your team can share vocabulary.
