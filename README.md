@@ -26,9 +26,16 @@ Once it's done, run `npx skills list` to see what landed.
 
 ## Skills
 
-Mine plus the ones I borrow — Matt's are from [mattpocock/skills](https://github.com/mattpocock/skills), licensed MIT.
+### Mine
 
-- **paul-graham-writing** (mine) — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
+- **paul-graham-writing** — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
+
+### From other people
+
+Hand-picked skills I borrow from authors whose work I love.
+
+#### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
+
 - **write-a-prd** — Walks you through writing a PRD by interviewing you and poking around the codebase, then files it as a GitHub issue.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices.
 - **prd-to-issues** — Breaks a PRD into GitHub issues anyone on the team can pick up.
