@@ -1,23 +1,14 @@
 #!/usr/bin/env bash
-# Install every skill I use on a fresh machine.
-# Runs `npx skills add` for each skill in sequence, interactively,
-# so you can pick agents and options in the TUI each time.
+# Install every skill I use on a fresh machine, in two TUI passes.
+# Each `npx skills add` shows one picker for agents and confirmation.
 set -euo pipefail
 
-# My own skills — pick which ones in the TUI
-npx skills@latest add andrewjohnharvey/skills
+# Matt Pocock's skills — https://github.com/mattpocock/skills
+npx skills@latest add mattpocock/skills \
+  -s write-a-prd,prd-to-plan,prd-to-issues,grill-me,design-an-interface,request-refactor-plan,tdd,triage-issue,improve-codebase-architecture,ubiquitous-language
 
-# Matt Pocock — https://github.com/mattpocock/skills
-npx skills@latest add mattpocock/skills/write-a-prd
-npx skills@latest add mattpocock/skills/prd-to-plan
-npx skills@latest add mattpocock/skills/prd-to-issues
-npx skills@latest add mattpocock/skills/grill-me
-npx skills@latest add mattpocock/skills/design-an-interface
-npx skills@latest add mattpocock/skills/request-refactor-plan
-npx skills@latest add mattpocock/skills/tdd
-npx skills@latest add mattpocock/skills/triage-issue
-npx skills@latest add mattpocock/skills/improve-codebase-architecture
-npx skills@latest add mattpocock/skills/ubiquitous-language
+# My own skills
+npx skills@latest add andrewjohnharvey/skills
 
 echo
 echo "Done. Run \`npx skills list\` to see what's installed."
