@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# Install every skill I use on a fresh machine, in two TUI passes.
 # Each `npx skills add` shows one picker for agents and confirmation.
 set -euo pipefail
+
+# My own skills
+npx skills@latest add andrewjohnharvey/skills
 
 # Matt Pocock's skills — https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills -s \
@@ -15,9 +17,6 @@ npx skills@latest add mattpocock/skills -s \
   triage-issue \
   improve-codebase-architecture \
   ubiquitous-language
-
-# My own skills
-npx skills@latest add andrewjohnharvey/skills
 
 echo
 echo "Done. Run \`npx skills list\` to see what's installed."
