@@ -36,9 +36,9 @@ Hand-picked skills I borrow from authors whose work I love.
 
 #### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
 
-- **write-a-prd** — Walks you through writing a PRD by interviewing you and poking around the codebase, then files it as a GitHub issue.
+- **to-prd** — Turns the current conversation and codebase context into a PRD and files it as a GitHub issue. No interview — it synthesizes from what you've already discussed.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices.
-- **prd-to-issues** — Breaks a PRD into GitHub issues anyone on the team can pick up.
+- **to-issues** — Breaks a plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices.
 - **grill-me** — Interviews you relentlessly about a plan until every branch of the decision tree is resolved. Great when you need your thinking stress-tested.
 - **design-an-interface** — Generates several radically different interface designs in parallel so you can compare.
 - **request-refactor-plan** — Helps you plan a refactor as a series of tiny commits, then files it as a GitHub issue.
@@ -46,3 +46,6 @@ Hand-picked skills I borrow from authors whose work I love.
 - **triage-issue** — Hunts down a bug's root cause and files an issue with a TDD-based fix plan.
 - **improve-codebase-architecture** — Looks for architectural changes that would make a codebase more testable.
 - **ubiquitous-language** — Pulls a DDD-style glossary out of the current conversation so your team can share vocabulary.
+- **github-triage** — Triages GitHub issues through a label-based state machine, with interactive grilling to prep issues for an AFK agent.
+- **caveman** — Ultra-compressed reply mode: drops filler and articles for ~75% fewer tokens while keeping full technical accuracy.
+- **zoom-out** — Asks the agent to step up a layer of abstraction and map the relevant modules and callers when you're unfamiliar with an area.

@@ -7,16 +7,19 @@ npx skills@latest add andrewjohnharvey/skills
 
 # Matt Pocock's skills — https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills -s \
-  write-a-prd \
+  to-prd \
   prd-to-plan \
-  prd-to-issues \
+  to-issues \
   grill-me \
   design-an-interface \
   request-refactor-plan \
   tdd \
   triage-issue \
   improve-codebase-architecture \
-  ubiquitous-language
+  ubiquitous-language \
+  github-triage \
+  caveman \
+  zoom-out
 
 echo
 echo "Done. Run \`npx skills list\` to see what's installed."
