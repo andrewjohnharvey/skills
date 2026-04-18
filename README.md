@@ -1,51 +1,49 @@
 # Skills
 
-This is my personal collection of skills for AI agents — a few I've written myself, plus a hand-picked set I borrow from other people whose work I love. One command sets up the whole lot on any machine, so your agent session is ready to go in seconds.
+My skills for AI agents. A few I wrote. The rest I borrow from people whose work I love. One command installs the lot.
 
 ## Install
 
-Walk through every skill, one by one, in the `skills` TUI (pick your agents and options for each):
+Walk through each skill in the `skills` TUI:
 
 ```sh
 bash <(curl -fsSL https://raw.githubusercontent.com/andrewjohnharvey/skills/main/install.sh)
 ```
 
-Just want mine? No problem:
+Just mine:
 
 ```sh
 npx skills add andrewjohnharvey/skills
 ```
 
-Or pick a single one:
+One of mine:
 
 ```sh
 npx skills add andrewjohnharvey/skills --skill paul-graham-writing
 ```
 
-Once it's done, run `npx skills list` to see what landed.
+Then `npx skills list` to see what landed.
 
 ## Skills
 
 ### Mine
 
-- **paul-graham-writing** — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
-- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); vendored here because it was removed upstream.
+- **paul-graham-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
+- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); kept here after he removed it upstream.
 
 ### From other people
 
-Hand-picked skills I borrow from authors whose work I love.
-
 #### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
 
-- **to-prd** — Turns the current conversation and codebase context into a PRD and files it as a GitHub issue. No interview — it synthesizes from what you've already discussed.
-- **to-issues** — Breaks a plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices.
-- **grill-me** — Interviews you relentlessly about a plan until every branch of the decision tree is resolved. Great when you need your thinking stress-tested.
-- **design-an-interface** — Generates several radically different interface designs in parallel so you can compare.
-- **request-refactor-plan** — Helps you plan a refactor as a series of tiny commits, then files it as a GitHub issue.
+- **to-prd** — Turns the current conversation into a PRD and files it as a GitHub issue. No interview — it uses what you've already said.
+- **to-issues** — Splits a plan, spec, or PRD into GitHub issues anyone on the team can grab.
+- **grill-me** — Interviews you about a plan until every branch is resolved. Use it to stress-test your thinking.
+- **design-an-interface** — Generates several very different interface designs in parallel so you can compare.
+- **request-refactor-plan** — Plans a refactor as a series of tiny commits, then files it as a GitHub issue.
 - **tdd** — Red-green-refactor, done properly.
-- **triage-issue** — Hunts down a bug's root cause and files an issue with a TDD-based fix plan.
-- **improve-codebase-architecture** — Looks for architectural changes that would make a codebase more testable.
-- **ubiquitous-language** — Pulls a DDD-style glossary out of the current conversation so your team can share vocabulary.
-- **github-triage** — Triages GitHub issues through a label-based state machine, with interactive grilling to prep issues for an AFK agent.
-- **caveman** — Ultra-compressed reply mode: drops filler and articles for ~75% fewer tokens while keeping full technical accuracy.
-- **zoom-out** — Asks the agent to step up a layer of abstraction and map the relevant modules and callers when you're unfamiliar with an area.
+- **triage-issue** — Finds a bug's root cause and files an issue with a TDD-based fix plan.
+- **improve-codebase-architecture** — Suggests architectural changes that make code more testable.
+- **ubiquitous-language** — Pulls a DDD glossary out of the current conversation so your team shares vocabulary.
+- **github-triage** — Triages GitHub issues through a label-based state machine, grilling to prep them for an AFK agent.
+- **caveman** — Ultra-terse replies. Drops filler and articles for ~75% fewer tokens, same technical accuracy.
+- **zoom-out** — Steps up a layer and maps the relevant modules and callers when you're new to an area.
