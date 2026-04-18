@@ -8,7 +8,6 @@ npx skills@latest add andrewjohnharvey/skills
 # Matt Pocock's skills — https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills -s \
   to-prd \
-  prd-to-plan \
   to-issues \
   grill-me \
   design-an-interface \

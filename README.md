@@ -29,6 +29,7 @@ Once it's done, run `npx skills list` to see what landed.
 ### Mine
 
 - **paul-graham-writing** — Helps your agent write the way Paul Graham writes: ordinary words, short sentences, nothing wasted. Great for emails, posts, essays, or tidying up anything that feels clunky.
+- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); vendored here because it was removed upstream.
 
 ### From other people
 
@@ -37,7 +38,6 @@ Hand-picked skills I borrow from authors whose work I love.
 #### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
 
 - **to-prd** — Turns the current conversation and codebase context into a PRD and files it as a GitHub issue. No interview — it synthesizes from what you've already discussed.
-- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices.
 - **to-issues** — Breaks a plan, spec, or PRD into independently-grabbable GitHub issues using vertical slices.
 - **grill-me** — Interviews you relentlessly about a plan until every branch of the decision tree is resolved. Great when you need your thinking stress-tested.
 - **design-an-interface** — Generates several radically different interface designs in parallel so you can compare.
