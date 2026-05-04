@@ -35,15 +35,16 @@ Then `npx skills list` to see what landed.
 
 #### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
 
-- **to-prd** — Turns the current conversation into a PRD and files it as a GitHub issue. No interview — it uses what you've already said.
-- **to-issues** — Splits a plan, spec, or PRD into GitHub issues anyone on the team can grab.
+Run `/setup-matt-pocock-skills` once per repo before using the engineering skills — it tells them which issue tracker, triage labels, and domain doc layout you use.
+
+- **setup-matt-pocock-skills** — Scaffolds an `## Agent skills` block in AGENTS.md/CLAUDE.md plus `docs/agents/` so the engineering skills know your issue tracker, labels, and doc layout. Run this first.
+- **to-prd** — Turns the current conversation into a PRD and files it on your issue tracker. No interview — it uses what you've already said.
+- **to-issues** — Splits a plan, spec, or PRD into independently-grabbable issues.
 - **grill-me** — Interviews you about a plan until every branch is resolved. Use it to stress-test your thinking.
-- **design-an-interface** — Generates several very different interface designs in parallel so you can compare.
-- **request-refactor-plan** — Plans a refactor as a series of tiny commits, then files it as a GitHub issue.
+- **grill-with-docs** — Like grill-me, but also sharpens terminology and updates CONTEXT.md and ADRs inline as decisions land. Matt's most popular skill.
+- **diagnose** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
 - **tdd** — Red-green-refactor, done properly.
-- **triage-issue** — Finds a bug's root cause and files an issue with a TDD-based fix plan.
+- **triage** — Moves issues through a label-based state machine, grilling to prep them for an AFK agent.
 - **improve-codebase-architecture** — Suggests architectural changes that make code more testable.
-- **ubiquitous-language** — Pulls a DDD glossary out of the current conversation so your team shares vocabulary.
-- **github-triage** — Triages GitHub issues through a label-based state machine, grilling to prep them for an AFK agent.
 - **caveman** — Ultra-terse replies. Drops filler and articles for ~75% fewer tokens, same technical accuracy.
 - **zoom-out** — Steps up a layer and maps the relevant modules and callers when you're new to an area.
