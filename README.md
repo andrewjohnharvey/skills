@@ -30,6 +30,7 @@ Then `npx skills list` to see what landed.
 
 - **pg-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); kept here after he removed it upstream.
+- **dogfood** — Systematically explores a web app to find bugs and UX issues, producing a report with full repro evidence (step-by-step screenshots and videos) for every finding.
 
 ### From other people
 
@@ -48,3 +49,18 @@ Run `/setup-matt-pocock-skills` once per repo before using the engineering skill
 - **improve-codebase-architecture** — Suggests architectural changes that make code more testable.
 - **caveman** — Ultra-terse replies. Drops filler and articles for ~75% fewer tokens, same technical accuracy.
 - **zoom-out** — Steps up a layer and maps the relevant modules and callers when you're new to an area.
+
+#### From [remotion-dev/skills](https://github.com/remotion-dev/skills)
+
+- **remotion-best-practices** — Domain knowledge for building videos with Remotion and React: animations, audio, assets, transitions, composition management.
+
+#### From [raphaelsalaja/userinterface-wiki](https://github.com/raphaelsalaja/userinterface-wiki)
+
+- **userinterface-wiki** — 152 UI/UX best-practice rules across 12 categories, prioritised by impact, for code review and generation.
+
+#### From [anthropics/skills](https://github.com/anthropics/skills)
+
+- **frontend-design** — A design framework for distinctive, production-grade frontend UIs. Bold typography, colour, motion, and spacing choices that avoid generic "AI slop".
+- **pptx** — Create, edit, and read PowerPoint presentations with design guidance and QA workflows.
+- **docx** — Create, edit, and read Word documents with full formatting: tables, images, hyperlinks, tracked changes.
+- **xlsx** — Create, edit, and analyse Excel spreadsheets (and .xlsm/.csv/.tsv) with formulas, formatting, and error-free calculations.
