@@ -30,7 +30,7 @@ Then `npx skills list` to see what landed.
 
 - **pg-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); kept here after he removed it upstream.
-- **dogfood** — Systematically explores a web app to find bugs and UX issues, producing a report with full repro evidence (step-by-step screenshots and videos) for every finding.
+- **dogfood** — Systematically explores a web app to find bugs and UX issues, producing a report with full repro evidence (step-by-step screenshots and videos) for every finding. Originally by [mxyhi](https://github.com/mxyhi/ok-skills/blob/main/dogfood/SKILL.md); kept here because it wasn't available on skills.sh.
 
 ### From other people
 
