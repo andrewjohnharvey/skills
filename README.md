@@ -19,7 +19,7 @@ npx skills add andrewjohnharvey/skills
 One of mine:
 
 ```sh
-npx skills add andrewjohnharvey/skills --skill paul-graham-writing
+npx skills add andrewjohnharvey/skills --skill pg-writing
 ```
 
 Then `npx skills list` to see what landed.
@@ -28,7 +28,7 @@ Then `npx skills list` to see what landed.
 
 ### Mine
 
-- **paul-graham-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
+- **pg-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
 - **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); kept here after he removed it upstream.
 
 ### From other people
