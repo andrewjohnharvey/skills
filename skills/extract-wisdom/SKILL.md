@@ -1,16 +1,16 @@
 ---
-name: ExtractWisdom
+name: extract-wisdom
 description: Dynamic wisdom extraction that adapts sections to content. USE WHEN extract wisdom, analyze video, analyze podcast, extract insights, what's interesting, extract from YouTube, what did I miss, key takeaways. Replaces static extract_wisdom with content-adaptive extraction.
 ---
 
 ## Customization
 
 **Before executing, check for user customizations at:**
-`~/.claude/skills/PAI/USER/SKILLCUSTOMIZATIONS/ExtractWisdom/`
+`~/.claude/skills/PAI/USER/SKILLCUSTOMIZATIONS/extract-wisdom/`
 
 If this directory exists, load and apply any PREFERENCES.md, configurations, or resources found there. These override default behavior. If the directory does not exist, proceed with skill defaults.
 
-# ExtractWisdom — Dynamic Content Extraction
+# extract-wisdom — Dynamic Content Extraction
 
 **The next generation of extract_wisdom.** Instead of static sections (IDEAS, QUOTES, HABITS...), this skill detects what wisdom domains actually exist in the content and builds custom sections around them.
 
