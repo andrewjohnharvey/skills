@@ -16,7 +16,9 @@ npx skills@latest add mattpocock/skills -s \
   tdd \
   triage \
   improve-codebase-architecture \
+  prototype \
   caveman \
+  handoff \
   zoom-out \
   write-a-skill
 

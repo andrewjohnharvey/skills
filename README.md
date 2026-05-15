@@ -48,7 +48,9 @@ Run `/setup-matt-pocock-skills` once per repo before using the engineering skill
 - **tdd** — Red-green-refactor, done properly.
 - **triage** — Moves issues through a label-based state machine, grilling to prep them for an AFK agent.
 - **improve-codebase-architecture** — Suggests architectural changes that make code more testable.
+- **prototype** — Builds throwaway prototypes to answer design questions: terminal apps for logic/state, or multiple UI variations for look-and-feel.
 - **caveman** — Ultra-terse replies. Drops filler and articles for ~75% fewer tokens, same technical accuracy.
+- **handoff** — Summarises the current conversation into a compact handoff document so another agent can continue cleanly.
 - **zoom-out** — Steps up a layer and maps the relevant modules and callers when you're new to an area.
 
 #### From [remotion-dev/skills](https://github.com/remotion-dev/skills)
