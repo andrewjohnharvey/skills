@@ -39,19 +39,24 @@ Then `npx skills list` to see what landed.
 
 Run `/setup-matt-pocock-skills` once per repo before using the engineering skills — it tells them which issue tracker, triage labels, and domain doc layout you use.
 
+Some skills are **user-invoked** workflows that you start explicitly. Others are **model-invoked** disciplines that agents can apply automatically or that the workflow skills call as dependencies.
+
 - **setup-matt-pocock-skills** — Scaffolds an `## Agent skills` block in AGENTS.md/CLAUDE.md plus `docs/agents/` so the engineering skills know your issue tracker, labels, and doc layout. Run this first.
 - **to-prd** — Turns the current conversation into a PRD and files it on your issue tracker. No interview — it uses what you've already said.
 - **to-issues** — Splits a plan, spec, or PRD into independently-grabbable issues.
 - **grill-me** — Interviews you about a plan until every branch is resolved. Use it to stress-test your thinking.
-- **grill-with-docs** — Like grill-me, but also sharpens terminology and updates CONTEXT.md and ADRs inline as decisions land. Matt's most popular skill.
-- **diagnose** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
-- **tdd** — Red-green-refactor, done properly.
-- **triage** — Moves issues through a label-based state machine, grilling to prep them for an AFK agent.
-- **improve-codebase-architecture** — Suggests architectural changes that make code more testable.
+- **grilling** — Reusable interview loop behind grill-me, grill-with-docs, and other workflows that need to resolve a design one decision at a time.
+- **grill-with-docs** — Like grill-me, but also builds the domain model and updates CONTEXT.md and ADRs inline as decisions land.
+- **diagnosing-bugs** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
+- **tdd** — Red-green-refactor in thin vertical slices, with explicit interface-design and test-quality guidance.
+- **triage** — Moves issues and external pull requests through a label-based state machine, producing agent-ready briefs.
+- **codebase-design** — Shared vocabulary and design rules for deep modules, small interfaces, clean seams, and testability.
+- **domain-modeling** — Builds and sharpens project terminology, CONTEXT.md glossaries, and architectural decisions.
+- **improve-codebase-architecture** — Scans for architectural improvements, presents them in a visual HTML report, and grills through the selected design.
 - **prototype** — Builds throwaway prototypes to answer design questions: terminal apps for logic/state, or multiple UI variations for look-and-feel.
-- **caveman** — Ultra-terse replies. Drops filler and articles for ~75% fewer tokens, same technical accuracy.
 - **handoff** — Summarises the current conversation into a compact handoff document so another agent can continue cleanly.
-- **zoom-out** — Steps up a layer and maps the relevant modules and callers when you're new to an area.
+- **teach** — Teaches a concept across multiple sessions using a stateful workspace, reusable lesson assets, references, and learning records.
+- **writing-great-skills** — A reference for writing predictable skills, including invocation design, descriptions, structure, and removing no-op instructions.
 
 #### From [remotion-dev/skills](https://github.com/remotion-dev/skills)
 

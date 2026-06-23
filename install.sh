@@ -11,16 +11,18 @@ npx skills@latest add mattpocock/skills -s \
   to-prd \
   to-issues \
   grill-me \
+  grilling \
   grill-with-docs \
-  diagnose \
+  diagnosing-bugs \
   tdd \
   triage \
+  codebase-design \
+  domain-modeling \
   improve-codebase-architecture \
   prototype \
-  caveman \
   handoff \
-  zoom-out \
-  write-a-skill
+  teach \
+  writing-great-skills
 
 # Remotion's skills — https://github.com/remotion-dev/skills
 npx skills@latest add remotion-dev/skills -s remotion-best-practices
