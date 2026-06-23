@@ -1,0 +1,7 @@
+interface:
+  display_name: "Diagnose"
+  short_description: "Run the maintained bug diagnosis workflow"
+  default_prompt: "Use $diagnose to diagnose this bug."
+
+policy:
+  allow_implicit_invocation: false
