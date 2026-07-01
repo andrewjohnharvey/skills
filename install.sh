@@ -16,10 +16,14 @@ npx skills@latest add mattpocock/skills -s \
   diagnosing-bugs \
   tdd \
   triage \
+  resolving-merge-conflicts \
+  git-guardrails-claude-code \
   codebase-design \
   domain-modeling \
   improve-codebase-architecture \
   prototype \
+  implement \
+  review \
   handoff \
   teach \
   writing-great-skills

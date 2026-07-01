@@ -51,10 +51,14 @@ Some skills are **user-invoked** workflows that you start explicitly. Others are
 - **diagnosing-bugs** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
 - **tdd** — Red-green-refactor in thin vertical slices, with explicit interface-design and test-quality guidance.
 - **triage** — Moves issues and external pull requests through a label-based state machine, producing agent-ready briefs.
+- **resolving-merge-conflicts** — Disciplined loop for resolving an in-progress git merge/rebase conflict: inspect state, understand both sides, resolve, verify.
+- **git-guardrails-claude-code** — Sets up Claude Code hooks that block destructive git commands (push, `reset --hard`, `clean`, `branch -D`) before they run.
 - **codebase-design** — Shared vocabulary and design rules for deep modules, small interfaces, clean seams, and testability.
 - **domain-modeling** — Builds and sharpens project terminology, CONTEXT.md glossaries, and architectural decisions.
 - **improve-codebase-architecture** — Scans for architectural improvements, presents them in a visual HTML report, and grills through the selected design.
 - **prototype** — Builds throwaway prototypes to answer design questions: terminal apps for logic/state, or multiple UI variations for look-and-feel.
+- **implement** — Drives a full work item from a PRD or set of issues: applies `tdd` at pre-agreed seams, runs typechecking and tests at the right cadence, then hands off to `review` and commits. The connective tissue between `to-prd`/`to-issues` and the actual build.
+- **review** — Two-axis review of the diff since a fixed point (commit/branch/tag): **Standards** (does it follow the repo's documented conventions + a Fowler code-smell baseline?) and **Spec** (does it match the originating issue/PRD?). Runs both as parallel sub-agents and reports them side by side. _Currently in Matt's `in-progress` folder — may change upstream._
 - **handoff** — Summarises the current conversation into a compact handoff document so another agent can continue cleanly.
 - **teach** — Teaches a concept across multiple sessions using a stateful workspace, reusable lesson assets, references, and learning records.
 - **writing-great-skills** — A reference for writing predictable skills, including invocation design, descriptions, structure, and removing no-op instructions.
