@@ -24,12 +24,14 @@ npx skills add andrewjohnharvey/skills --skill pg-writing
 
 Then `npx skills list` to see what landed.
 
+Installers add and update skills, but they may leave behind skills that a source later renames or removes. After a big upstream update, run `npx skills list` and remove anything you no longer want.
+
 ## Skills
 
 ### Mine
 
 - **pg-writing** — Writes the way Paul Graham writes: plain words, short sentences, nothing wasted. Good for emails, posts, and anything that feels clunky.
-- **prd-to-plan** — Turns a PRD into a multi-phase plan using tracer-bullet vertical slices. Originally by [Matt Pocock](https://github.com/mattpocock/skills); kept here after he removed it upstream.
+- **prd-to-plan** — Turns a PRD into a local plan of tracer-bullet phases. It is a file-based alternative to Matt Pocock's tracker-based `to-tickets` flow.
 - **diagnose** — A short, user-invoked alias for Matt Pocock's maintained `diagnosing-bugs` workflow.
 - **dogfood** — Systematically explores a web app to find bugs and UX issues, producing a report with full repro evidence (step-by-step screenshots and videos) for every finding. Originally by [mxyhi](https://github.com/mxyhi/ok-skills/blob/main/dogfood/SKILL.md); kept here because it wasn't available on skills.sh.
 - **extract-wisdom** — Extracts adaptive, content-specific insights from videos, podcasts, articles, and pasted text. Originally by [Daniel Miessler](https://github.com/danielmiessler/Personal_AI_Infrastructure/tree/main/Releases/v3.0/.claude/skills/ExtractWisdom).
@@ -38,30 +40,65 @@ Then `npx skills list` to see what landed.
 
 #### From [mattpocock/skills](https://github.com/mattpocock/skills) (MIT)
 
-Run `/setup-matt-pocock-skills` once per repo before using the engineering skills — it tells them which issue tracker, triage labels, and domain doc layout you use.
+These skills work best as recipes.
 
-Some skills are **user-invoked** workflows that you start explicitly. Others are **model-invoked** disciplines that agents can apply automatically or that the workflow skills call as dependencies.
+##### Get started
 
-- **setup-matt-pocock-skills** — Scaffolds an `## Agent skills` block in AGENTS.md/CLAUDE.md plus `docs/agents/` so the engineering skills know your issue tracker, labels, and doc layout. Run this first.
-- **to-prd** — Turns the current conversation into a PRD and files it on your issue tracker. No interview — it uses what you've already said.
-- **to-issues** — Splits a plan, spec, or PRD into independently-grabbable issues.
-- **grill-me** — Interviews you about a plan until every branch is resolved. Use it to stress-test your thinking.
-- **grilling** — Reusable interview loop behind grill-me, grill-with-docs, and other workflows that need to resolve a design one decision at a time.
-- **grill-with-docs** — Like grill-me, but also builds the domain model and updates CONTEXT.md and ADRs inline as decisions land.
-- **diagnosing-bugs** — Disciplined diagnosis loop for hard bugs and performance regressions: reproduce → minimise → hypothesise → instrument → fix → regression-test.
-- **tdd** — Red-green-refactor in thin vertical slices, with explicit interface-design and test-quality guidance.
-- **triage** — Moves issues and external pull requests through a label-based state machine, producing agent-ready briefs.
-- **resolving-merge-conflicts** — Disciplined loop for resolving an in-progress git merge/rebase conflict: inspect state, understand both sides, resolve, verify.
-- **git-guardrails-claude-code** — Sets up Claude Code hooks that block destructive git commands (push, `reset --hard`, `clean`, `branch -D`) before they run.
-- **codebase-design** — Shared vocabulary and design rules for deep modules, small interfaces, clean seams, and testability.
-- **domain-modeling** — Builds and sharpens project terminology, CONTEXT.md glossaries, and architectural decisions.
-- **improve-codebase-architecture** — Scans for architectural improvements, presents them in a visual HTML report, and grills through the selected design.
-- **prototype** — Builds throwaway prototypes to answer design questions: terminal apps for logic/state, or multiple UI variations for look-and-feel.
-- **implement** — Drives a full work item from a PRD or set of issues: applies `tdd` at pre-agreed seams, runs typechecking and tests at the right cadence, then hands off to `review` and commits. The connective tissue between `to-prd`/`to-issues` and the actual build.
-- **review** — Two-axis review of the diff since a fixed point (commit/branch/tag): **Standards** (does it follow the repo's documented conventions + a Fowler code-smell baseline?) and **Spec** (does it match the originating issue/PRD?). Runs both as parallel sub-agents and reports them side by side. _Currently in Matt's `in-progress` folder — may change upstream._
-- **handoff** — Summarises the current conversation into a compact handoff document so another agent can continue cleanly.
-- **teach** — Teaches a concept across multiple sessions using a stateful workspace, reusable lesson assets, references, and learning records.
-- **writing-great-skills** — A reference for writing predictable skills, including invocation design, descriptions, structure, and removing no-op instructions.
+Run `/setup-matt-pocock-skills` once per repo. It tells the other skills where issues and domain docs live. If you are not sure what to use next, run `/ask-matt`.
+
+##### Ship a feature
+
+`/grill-with-docs` → `/to-spec` → `/to-tickets` → `/implement`
+
+`grill-with-docs` sharpens the idea through `grilling` and records its language with `domain-modeling`. `implement` builds each ticket with `tdd`, then finishes with `code-review`.
+
+##### Plan a large project
+
+`/wayfinder` → `/to-spec` → `/to-tickets` → `/implement`
+
+`wayfinder` maps work that is too large or unclear for one session. It clears open questions with `research`, `prototype`, `grilling`, and `domain-modeling`. Once the path is clear, the normal feature recipe takes over.
+
+##### Fix a hard bug
+
+Run `/diagnosing-bugs`. It builds a tight reproduction loop, finds the cause, fixes it, and leaves a regression test. If the bug exposes a bad seam, follow it with `/improve-codebase-architecture`.
+
+##### Improve the architecture
+
+Run `/improve-codebase-architecture` to find the worst friction and choose what to fix. It uses `codebase-design`, `grilling`, and `domain-modeling` to shape the change.
+
+##### Process incoming work
+
+`/triage` → `/implement`
+
+`triage` verifies incoming issues and pull requests. It uses `grilling` and `domain-modeling` when a request is vague, then prepares clear work for `implement`.
+
+##### Answer an open question
+
+Use `/research` when you need facts from primary sources. Use `/prototype` when you need to see how an interface or state model feels.
+
+##### Resolve a merge
+
+Run `/resolving-merge-conflicts`. It traces both sides back to their intent, resolves each conflict, and runs the repo's checks.
+
+##### Sharpen a plan outside a codebase
+
+Run `/grill-me`. It uses `grilling` to work through one decision at a time.
+
+##### Move work to a fresh session
+
+Run `/handoff` to save the useful context for another agent.
+
+##### Learn something
+
+Run `/teach` to build a course of short lessons around a goal.
+
+##### Write a better skill
+
+Run `/writing-great-skills` to make a skill smaller, clearer, and more predictable.
+
+##### Block dangerous Git commands in Claude Code
+
+Run `/git-guardrails-claude-code` to stop commands such as `git push`, `git reset --hard`, and `git clean -f`.
 
 #### From [remotion-dev/skills](https://github.com/remotion-dev/skills)
 

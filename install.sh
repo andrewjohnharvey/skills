@@ -5,28 +5,32 @@ set -euo pipefail
 # My own skills
 npx skills@latest add andrewjohnharvey/skills
 
-# Matt Pocock's skills — https://github.com/mattpocock/skills
+# Matt Pocock's promoted skills, plus his Claude Code git guardrails
+# https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills -s \
+  ask-matt \
+  diagnosing-bugs \
+  grill-with-docs \
+  triage \
+  improve-codebase-architecture \
   setup-matt-pocock-skills \
-  to-prd \
-  to-issues \
+  tdd \
+  to-spec \
+  to-tickets \
+  wayfinder \
+  implement \
+  prototype \
+  research \
+  domain-modeling \
+  codebase-design \
+  code-review \
+  resolving-merge-conflicts \
   grill-me \
   grilling \
-  grill-with-docs \
-  diagnosing-bugs \
-  tdd \
-  triage \
-  resolving-merge-conflicts \
-  git-guardrails-claude-code \
-  codebase-design \
-  domain-modeling \
-  improve-codebase-architecture \
-  prototype \
-  implement \
-  review \
   handoff \
   teach \
-  writing-great-skills
+  writing-great-skills \
+  git-guardrails-claude-code
 
 # Remotion's skills — https://github.com/remotion-dev/skills
 npx skills@latest add remotion-dev/skills -s remotion-best-practices
