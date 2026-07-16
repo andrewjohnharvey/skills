@@ -32,12 +32,6 @@ npx skills@latest add mattpocock/skills -s \
   writing-great-skills \
   git-guardrails-claude-code
 
-# Remotion's skills — https://github.com/remotion-dev/skills
-npx skills@latest add remotion-dev/skills -s remotion-best-practices
-
-# Raphael Salaja's skills — https://github.com/raphaelsalaja/userinterface-wiki
-npx skills@latest add raphaelsalaja/userinterface-wiki -s userinterface-wiki
-
 # Anthropic's skills — https://github.com/anthropics/skills
 npx skills@latest add anthropics/skills -s \
   frontend-design \

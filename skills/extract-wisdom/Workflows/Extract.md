@@ -6,7 +6,7 @@ Extract dynamic, content-adaptive wisdom from any content source.
 
 | Source | Method |
 |--------|--------|
-| YouTube URL | `fabric -y "URL"` to get transcript |
+| YouTube URL | Use `yt-dlp` to download captions |
 | Article URL | WebFetch to get content |
 | File path | Read the file directly |
 | Pasted text | Use directly |
@@ -15,7 +15,7 @@ Extract dynamic, content-adaptive wisdom from any content source.
 
 ### Step 1: Get the Content
 
-Obtain the full text/transcript. For YouTube, use `fabric -y "URL"` to extract transcript. Save to a working file if large.
+Obtain the full text or transcript. For YouTube, run `yt-dlp --write-auto-subs --skip-download --sub-format vtt "URL"` and read the downloaded `.vtt` file. Save long content to a working file.
 
 ### Step 2: Deep Read
 
