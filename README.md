@@ -36,7 +36,7 @@ Run `/setup-matt-pocock-skills` once. It tells the other skills where issues and
 
 Run `/pg-writing` to draft or rewrite prose with plain words and no wasted space.
 
-Run `/controlled-english` when the reader is translating as they go and every word has to carry one meaning.
+Run `/controlled-english` when the reader is translating as they go and every word has to carry one meaning. References the ASD-STE100 standard.
 
 ### Ship a feature
 
