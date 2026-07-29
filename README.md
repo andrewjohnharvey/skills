@@ -36,6 +36,8 @@ Run `/setup-matt-pocock-skills` once. It tells the other skills where issues and
 
 Run `/pg-writing` to draft or rewrite prose with plain words and no wasted space.
 
+Run `/controlled-english` when the reader will translate as they go, or reads English as a second language. It makes every word carry one meaning: concrete nouns, one name per thing, the action in the verb. It works by judgment, not by a dictionary, so it cannot certify compliance with a standard like ASD-STE100.
+
 ### Ship a feature
 
 `/grill-with-docs` → `/to-spec` → `/to-tickets` → `/implement`
