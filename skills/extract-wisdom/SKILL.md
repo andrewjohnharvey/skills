@@ -1,6 +1,6 @@
 ---
 name: extract-wisdom
-description: Dynamic wisdom extraction that adapts sections to content. USE WHEN extract wisdom, analyze video, analyze podcast, extract insights, what's interesting, extract from YouTube, what did I miss, key takeaways. Replaces static extract_wisdom with content-adaptive extraction.
+description: Extract ideas that matter from a video, podcast, or article instead of forcing every source into the same template. Use when the user asks to extract wisdom, analyze a video or podcast, or get the insights or key takeaways.
 ---
 
 ## Customization

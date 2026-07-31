@@ -1,6 +1,6 @@
 ---
 name: diagnose
-description: User-invoked alias for the maintained diagnosing-bugs workflow. Use when the user explicitly invokes /diagnose.
+description: Find and fix a hard bug with a tight reproduction loop. Use when the user asks to diagnose, debug, find the cause of, or fix a bug.
 ---
 
 # Diagnose

@@ -1,6 +1,6 @@
 ---
 name: controlled-english
-description: Writes and rewrites technical prose for clarity through word-choice judgment — concrete nouns, one sense per word, one name per thing. Use when the user wants text written or rewritten plainly, simplified for non-native or translating readers, or stripped of abstraction and jargon. This skill applies judgment, not a controlled vocabulary, so it does not certify compliance with a published standard.
+description: Write or rewrite technical prose so each word carries one meaning — concrete nouns, one sense per word, one name per thing. Use when the user asks to write or simplify text for non-native readers or translation, or to strip abstraction and jargon out of technical writing.
 ---
 
 Clear technical prose is decided one word at a time — not by a list of permitted

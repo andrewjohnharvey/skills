@@ -1,7 +1,6 @@
 ---
 name: pg-writing
-description: >
-  Apply Paul Graham's writing principles to produce or revise content that is clear, simple, and deeply readable. Use this skill whenever the user wants to write, rewrite, polish, or improve any piece of writing — emails, blog posts, essays, reports, proposals, explanations, announcements, or anything else. Also use it when the user asks to "simplify," "clean up," "make this clearer," "make this sound better," or "edit" existing text. If the user wants to write anything at all, lean toward using this skill — simple, honest writing is almost always the goal.
+description: Draft or rewrite prose with clear, simple words and no wasted space. Use when the user asks to write, draft, rewrite, polish, simplify, edit, or improve any piece of writing.
 ---
  
 # Paul Graham Writing Skill
