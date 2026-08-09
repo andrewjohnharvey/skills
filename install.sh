@@ -25,11 +25,14 @@ npx skills@latest add mattpocock/skills -s \
   codebase-design \
   code-review \
   resolving-merge-conflicts \
+  wizard \
   grill-me \
   grilling \
   handoff \
   teach \
-  writing-great-skills \
+  to-questionnaire \
+  wait-what \
+  writing-for-agents \
   git-guardrails-claude-code
 
 # Anthropic's skills — https://github.com/anthropics/skills

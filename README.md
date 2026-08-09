@@ -36,7 +36,7 @@ Run `/setup-matt-pocock-skills` once. It tells the other skills where issues and
 
 Run `/pg-writing` to draft or rewrite prose with plain words and no wasted space.
 
-Run `/controlled-english` when the reader is translating as they go and every word has to carry one meaning. References the ASD-STE100 standard.
+Run `/technical-english` when the reader is translating as they go and every word has to carry one meaning. References the ASD-STE100 standard.
 
 ### Ship a feature
 
@@ -90,9 +90,21 @@ Run `/extract-wisdom`. It finds the ideas that matter in the source instead of f
 
 Run `/resolving-merge-conflicts`. It traces both sides back to their intent, resolves each conflict, and runs the repo's checks.
 
+### Set up something only a person can do
+
+Run `/wizard` to build a bash script that walks someone through the steps an agent cannot take, such as provisioning infrastructure or setting CI secrets.
+
 ### Sharpen a plan outside a codebase
 
 Run `/grill-me`. It uses `grilling` to work through one decision at a time.
+
+### Get an answer from someone else
+
+Run `/to-questionnaire` to turn a decision you cannot settle alone into a questionnaire for the person who can.
+
+### Ask for a plainer explanation
+
+Run `/wait-what` the moment a reply does not land. It makes the point again in plain English, in the words your project already uses.
 
 ### Move work to a fresh session
 
@@ -102,9 +114,9 @@ Run `/handoff` to save the useful context for another agent.
 
 Run `/teach` to build a course of short lessons around a goal.
 
-### Write a better skill
+### Write for agents
 
-Run `/writing-great-skills` to make a skill smaller, clearer, and more predictable.
+Run `/writing-for-agents` to sharpen anything an agent reads: a skill, a `CLAUDE.md`, or any doc reached by a pointer.
 
 ### Block dangerous Git commands in Claude Code
 

@@ -1,6 +1,9 @@
 ---
-name: controlled-english
-description: Write or rewrite technical prose so each word carries one meaning — concrete nouns, one sense per word, one name per thing. Use when the user asks to write or simplify text for non-native readers or translation, or to strip abstraction and jargon out of technical writing.
+name: technical-english
+description: Write or rewrite technical text in plain, unambiguous English. Use when the user asks to write, rewrite, simplify, or clean up any writing.
+metadata:
+  author: centro-benefits
+  version: "1.0"
 ---
 
 Clear technical prose is decided one word at a time — not by a list of permitted
@@ -69,8 +72,8 @@ When a noun fails, do not hunt for a plainer synonym — the synonym is abstract
 too. **Name the observable change instead, and let the reader draw the
 conclusion.** This one move repairs most failures:
 
-> *This approach offers significant performance benefits.*
-> → *The report opens in two seconds. Before, it opened in nine.*
+> _This approach offers significant performance benefits._
+> → _The report opens in two seconds. Before, it opened in nine._
 
 **The second-sense test — for every word that came easily.** Ask what else this
 word means. Where you can produce a second sense in a moment, you have found the
@@ -90,8 +93,8 @@ Related, and the more frequent version: **the action belongs in the verb.** Wher
 the verb is doing no work and a noun beside it carries the action, the sentence
 has an abstraction where it should have an event.
 
-> *Perform a validation of the input before submission.*
-> → *Validate the input before you submit it.*
+> _Perform a validation of the input before submission._
+> → _Validate the input before you submit it._
 
 **The one-name test — across the whole text.** Choose one name per thing before
 you write, capitalization included, and use that one every time. Every synonym
@@ -111,6 +114,10 @@ construction lost. That judgment belongs to the user, not to you.
 
 State plainly that the result is unverified. Judgment gets a text most of the
 way; only a dictionary settles whether a particular word is permitted.
+
+The report is for the user, so it goes in the reply. Where the text is an
+artifact — a PR description, an ADR, a doc page — the artifact carries the text
+alone.
 
 ## Where a real standard applies
 
