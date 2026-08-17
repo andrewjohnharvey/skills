@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Writing"
+  short_description: "Polish writing intended for AI agents"
+  default_prompt: "Use $ai-writing to rewrite these instructions for an AI agent."

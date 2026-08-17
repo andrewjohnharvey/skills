@@ -38,6 +38,12 @@ Run `/pg-writing` to draft or rewrite prose with plain words and no wasted space
 
 Run `/technical-english` when the reader is translating as they go and every word has to carry one meaning. References the ASD-STE100 standard.
 
+Run `/unslop` to remove obvious AI writing patterns and give the text a more human voice.
+
+Run `/ai-writing` to prepare instructions and other documents for agents. It applies `writing-for-agents`, `technical-english`, then `unslop`.
+
+Run `/human-writing` to prepare prose for people. It applies `technical-english`, `pg-writing`, then `unslop`.
+
 ### Ship a feature
 
 `/grill-with-docs` → `/to-spec` → `/to-tickets` → `/implement`
@@ -61,6 +67,18 @@ If the bug exposes a bad seam, follow it with `/improve-codebase-architecture`.
 ### Improve the architecture
 
 Run `/improve-codebase-architecture` to find the worst friction and choose what to fix. It uses `codebase-design`, `grilling`, and `domain-modeling` to shape the change.
+
+### Build TypeScript services
+
+Use `/coding-standards` for correct-by-construction TypeScript with typed failures, parsed boundaries, explicit dependencies, and safe tests.
+
+Use `/effect-service-design` to design or audit Effect services, Layers, and composition.
+
+Use `/prelude` to create or rebuild a TypeScript `prelude.ts` from the generic helpers and types already present in a codebase.
+
+### Work in Herdr
+
+Use `/herdr` to inspect and control Herdr workspaces, tabs, panes, commands, and background processes. It requires a Herdr-managed pane.
 
 ### Process incoming work
 
@@ -104,7 +122,7 @@ Run `/to-questionnaire` to turn a decision you cannot settle alone into a questi
 
 ### Ask for a plainer explanation
 
-Run `/wait-what` the moment a reply does not land. It makes the point again in plain English, in the words your project already uses.
+Run `/bro` to restate the previous response in plain, concise language without jargon.
 
 ### Move work to a fresh session
 
@@ -125,5 +143,7 @@ Run `/git-guardrails-claude-code` to stop commands such as `git push`, `git rese
 ## Sources
 
 - [Matt Pocock's skills](https://github.com/mattpocock/skills) (MIT) provide the engineering and planning workflows. `prd-to-plan` preserves an earlier file-based planning workflow.
+- [David Mulroy's skills](https://github.com/dmmulroy/skills) provide `bro`, `coding-standards`, `effect-service-design`, `herdr`, and `prelude`.
+- [Cursor's pstack plugin](https://github.com/cursor/plugins/tree/main/pstack) provides `unslop`.
 - [Daniel Miessler's LifeOS](https://github.com/danielmiessler/LifeOS/tree/main/LifeOS/install/skills/ExtractWisdom) is the basis of `extract-wisdom`.
 - [Anthropic's skills](https://github.com/anthropics/skills) provide `frontend-design`, `pptx`, `docx`, and `xlsx`.

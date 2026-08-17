@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Writing"
+  short_description: "Polish clear, natural writing for people"
+  default_prompt: "Use $human-writing to rewrite this text for a human reader."

@@ -31,9 +31,21 @@ npx skills@latest add mattpocock/skills -s \
   handoff \
   teach \
   to-questionnaire \
-  wait-what \
   writing-for-agents \
   git-guardrails-claude-code
+
+# David Mulroy's TypeScript and agent workflow skills
+# https://github.com/dmmulroy/skills
+npx skills@latest add dmmulroy/skills -s \
+  bro \
+  coding-standards \
+  effect-service-design \
+  herdr \
+  prelude
+
+# Cursor's pstack writing skill
+# https://github.com/cursor/plugins/tree/main/pstack/skills/unslop
+npx skills@latest add cursor/plugins -s unslop
 
 # Anthropic's skills — https://github.com/anthropics/skills
 npx skills@latest add anthropics/skills -s \
