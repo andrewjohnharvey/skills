@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
-# Each `npx skills add` shows one picker for agents and confirmation.
+# With no arguments, each source prompts for agents and confirmation.
+# Arguments such as --global --agent codex claude-code --yes reach every source.
 set -euo pipefail
 
 # My own skills
-npx skills@latest add andrewjohnharvey/skills
+npx skills@latest add andrewjohnharvey/skills "$@"
 
-# Matt Pocock's promoted skills, plus his Claude Code git guardrails
+# Matt Pocock's promoted skills except wait-what (we use bro), plus git guardrails
 # https://github.com/mattpocock/skills
 npx skills@latest add mattpocock/skills -s \
   ask-matt \
@@ -19,12 +20,14 @@ npx skills@latest add mattpocock/skills -s \
   to-tickets \
   wayfinder \
   implement \
+  implement-spec \
   prototype \
   research \
   domain-modeling \
   codebase-design \
   code-review \
-  resolving-merge-conflicts \
+  pr \
+  retro \
   wizard \
   grill-me \
   grilling \
@@ -32,7 +35,7 @@ npx skills@latest add mattpocock/skills -s \
   teach \
   to-questionnaire \
   writing-for-agents \
-  git-guardrails-claude-code
+  git-guardrails-claude-code "$@"
 
 # David Mulroy's TypeScript and agent workflow skills
 # https://github.com/dmmulroy/skills
@@ -41,18 +44,18 @@ npx skills@latest add dmmulroy/skills -s \
   coding-standards \
   effect-service-design \
   herdr \
-  prelude
+  prelude "$@"
 
 # Cursor's pstack writing skill
 # https://github.com/cursor/plugins/tree/main/pstack/skills/unslop
-npx skills@latest add cursor/plugins -s unslop
+npx skills@latest add cursor/plugins --full-depth -s unslop "$@"
 
 # Anthropic's skills — https://github.com/anthropics/skills
 npx skills@latest add anthropics/skills -s \
   frontend-design \
   pptx \
   docx \
-  xlsx
+  xlsx "$@"
 
 echo
 echo "Done. Run \`npx skills list\` to see what's installed."
