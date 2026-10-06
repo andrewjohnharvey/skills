@@ -57,7 +57,11 @@ Use one of the individual writing skills when you need a narrower pass:
 
 `/grill-with-docs` → `/to-spec` → `/to-tickets` → `/implement`
 
-`grill-with-docs` tests the idea through `grilling`. It records the project's terms and decisions with `domain-modeling`. `implement` builds each ticket with `tdd` and finishes with `code-review`.
+`grill-with-docs` tests the idea through `grilling`. It records the project's terms in `GLOSSARY.md` and decisions in ADRs with `domain-modeling`. `implement` builds each ticket with `tdd` and finishes with `code-review`.
+
+Use `/implement-spec` after `/to-tickets` to build a whole spec in one run. It works ready tickets in parallel through subagents in separate worktrees and merges them onto an integration branch. It opens a draft PR when the tracker requires one or you request it.
+
+Use `/pr` to write a PR body with a small visual summary, before/after evidence, and an assessment of rollback and affected behavior. After the build, run `/retro` in the same session to identify improvements to agent instructions, navigation, tooling, and automated checks.
 
 If you already have a PRD, run `/prd-to-plan`. It writes a phased plan to `./plans/`.
 
@@ -111,17 +115,13 @@ Run `/frontend-design` to give a new interface a clear visual direction.
 
 Run `/extract-wisdom` for a video, podcast, or article. It finds the useful ideas and chooses sections that fit the source.
 
-### Resolve a merge
-
-Run `/resolving-merge-conflicts`. It traces the intent of both sides, resolves each conflict, and runs the repository checks.
-
 ### Guide a person through setup
 
 Run `/wizard` to create a Bash script for steps that only a person can complete. Examples include provisioning infrastructure and setting CI secrets.
 
 ### Test a plan
 
-Run `/grill-me` to test one decision at a time.
+Run `/grill-me` to test a plan or decision through rounds of questions. Each round asks the questions whose prerequisites are settled.
 
 ### Ask someone for missing answers
 
