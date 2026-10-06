@@ -30,31 +30,9 @@ To install one skill from this repository, run:
 npx skills add andrewjohnharvey/skills --skill pg-writing
 ```
 
-To refresh global skills without prompts, pass your agent choices to the installer:
-
-```sh
-bash install.sh --global --agent codex claude-code --yes
-```
-
-These options are forwarded to every source. Cursor's `unslop` selection uses full-depth discovery so nested plugin skills are found. With no arguments, the installer keeps its interactive prompts.
-
-Run `npx skills list` to see project skills or `npx skills list --global` for global skills.
+Run `npx skills list` to see the installed skills.
 
 The installer adds and updates skills. It does not always remove skills that an upstream source renamed or deleted. After a large update, review the installed list and remove any old skills.
-
-### Matt Pocock updates through 1.3.1
-
-The installer selects Matt's promoted engineering and productivity skills except `wait-what`, plus his Claude Code Git guardrails. We use `bro` for simpler explanations. The latest review adds `implement-spec`, `pr`, and `retro` from 1.3.0. Version 1.3.1 fixes the bug-fix route in `ask-matt`. Experimental and project-specific skills stay outside the default set.
-
-Rerun the full installer to refresh the selected upstream skills. This also picks up changes to existing workflows, including round-based grilling, one local file per ticket, preserved prototype branches, Codex invocation metadata, and the cross-skill loading fixes.
-
-For existing installations and projects:
-
-- `resolving-merge-conflicts` was removed upstream with no replacement. Remove an old installed copy if you no longer want it. Agents handle merge conflicts directly.
-- Domain documents are now `GLOSSARY.md` and `GLOSSARY-MAP.md`. In projects using Matt's old convention, rename `CONTEXT.md` and `CONTEXT-MAP.md` and update pointers to them. The updated skills look for the new names.
-- Earlier renames are already reflected in this installer: `to-prd` to `to-spec`, `to-issues` to `to-tickets`, `review` to `code-review`, and `writing-great-skills` to `writing-for-agents`. Check for stale installed copies. Our `/diagnose` alias and file-based `/prd-to-plan` remain intentional local workflows.
-
-See the [release review](docs/research/matt-pocock-release.md) for sources and selection details.
 
 ## Pick a task
 
